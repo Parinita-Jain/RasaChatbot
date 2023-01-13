@@ -1,0 +1,846 @@
+
+
+Ai => 1956 => John McCarthy
+Ai is to mimic a human behavior.. how we talk,how we walk..etc
+Ml => 1959 => Arthur Samuel
+A system is created which can learn even when no proper instructions are given.
+A model here is a self evolving program..  
+DL => 2000 => Igor Aizenberg
+To deal with huge amount of data..
+
+
+Artificial Intelligence--It is the branch of computer science,by which we can createintelligent system or machines,which can behave, think, act and
+make decisions like human beings.Thus it gives Man Made thinking power
+The driving factors for ai are-
+1. dealing with fast Data Generation
+2. dealing with data Storage
+3. provides Computation power
+
+Goalof AI is--to create an expert system that exhibits intelligent behaviour,learn and demonstratethe explanation and advice to its users. 
+The various ways AI can learn this is--
+1. Reasoning
+=> Complex Problem solving
+=> Judgements/ Analysis / Decision Making ability
+
+
+2. Learning
+=> try to learning new things
+=> data gethering for Analysis & grasping
+
+3. Perception
+=> Interpretation
+
+4. Problem solving
+
+History of AI--
+
+This actually started in 1941,at an initial level,
+
+Year 1943: The first work which is now recognized as AI was done by Warren McCulloch and Walter pits in 1943. They proposed a model of artificial neurons.
+Year 1949: Donald Hebb demonstrated an updating rule for modifying the connection strength between neurons. His rule is now called Hebbian learning.
+Year 1950: The Alan Turing who was an English mathematician and pioneered Machine learning in 1950. 
+Alan Turing publishes "Computing Machinery and Intelligence" in which he proposed a test. The test can check the machine's ability 
+to exhibit intelligent behavior equivalent to human intelligence, called a Turing test
+
+Year 1955: An Allen Newell and Herbert A. Simon created the "first artificial intelligence program"Which was named as "Logic Theorist".
+ This program had proved 38 of 52 Mathematics theorems, and find new and more elegant proofs for some theorems.
+Year 1956: The word "Artificial Intelligence" first adopted by American Computer scientist John McCarthy at the Dartmouth Conference. 
+For the first time, AI coined as an academic field.
+At that time high-level computer languages such as FORTRAN, LISP, or COBOL were invented. And the enthusiasm for AI was very high at that time.
+
+Year 1966: The researchers emphasized developing algorithms which can solve mathematical problems. 
+Joseph Weizenbaum created the first chatbot in 1966, which was named as ELIZA.
+Year 1972: The first intelligent humanoid robot was built in Japan which was named as WABOT-1.
+The first AI winter (1974-1980)
+The duration between years 1974 to 1980 was the first AI winter duration. AI winter refers to the time period where computer scientist dealt with a severe shortage of funding from government for AI researches.
+During AI winters, an interest of publicity on artificial intelligence was decreased.
+A boom of AI (1980-1987)
+Year 1980: After AI winter duration, AI came back with "Expert System". Expert systems were programmed that emulate the decision-making ability of a human expert.
+In the Year 1980, the first national conference of the American Association of Artificial Intelligence was held at Stanford University.
+The second AI winter (1987-1993)
+The duration between the years 1987 to 1993 was the second AI Winter duration.
+Again Investors and government stopped in funding for AI research as due to high cost but not efficient result. The expert system such as XCON was very cost effective.
+The emergence of intelligent agents (1993-2011)
+Year 1997: In the year 1997, IBM Deep Blue beats world chess champion, Gary Kasparov, and became the first computer to beat a world chess champion.
+Year 2002: for the first time, AI entered the home in the form of Roomba, a vacuum cleaner.
+Year 2006: AI came in the Business world till the year 2006. Companies like Facebook, Twitter, and Netflix also started using AI.
+Deep learning, big data and artificial general intelligence (2011-present)
+Year 2011: In the year 2011, IBM's Watson won jeopardy, a quiz show, where it had to solve the complex questions as well as riddles. Watson had proved that it could understand natural language and can solve tricky questions quickly.
+Year 2012: Google has launched an Android app feature "Google now", which was able to provide information to the user as a prediction.
+Year 2014: In the year 2014, Chatbot "Eugene Goostman" won a competition in the infamous "Turing test."
+Year 2018: The "Project Debater" from IBM debated on complex topics with two master debaters and also performed extremely well.
+Google has demonstrated an AI program "Duplex" which was a virtual assistant and which had taken hairdresser appointment on call, and lady on other side didn't notice that she was talking with the machine.
+Now AI has developed to a remarkable level. The concept of Deep learning, big data, and data science are now trending like a boom. 
+Nowadays companies like Google, Facebook, IBM, and Amazon are working with AI and creating amazing devices. 
+The future of Artificial Intelligence is inspiring and will come with high intelligence.
+
+Agent in AI collectsinformation and reacts based on that collected information. Its 2 works are-
+1.perceiving environment trough sensors.
+2.actuators- we act with the help of sensors.
+
+PEAS- used to group simila typeof agents together.
+
+P-performance measure--
+E-environment
+A-Actuators
+S-Sensors
+
+this are checked lets say in self driving cars..
+
+
+rasa installation------------------------------------------------------------------------------
+
+conda create -n myenv python=3.7.6
+
+conda activate myenv
+
+pip3 install tensorflow
+
+pip3 install ujson
+
+pip3 install rasa
+
+Now,going inside d directory---
+
+(myenv) C:\Users\itvedant>d:
+
+(myenv) D:\>
+
+(myenv) D:\>mkdir chatrasa
+
+(myenv) D:\>cd chatrasa
+
+(myenv) D:\chatrasa>
+
+(myenv) D:\chatrasa>rasa init
+
+
+
+press enter in between
+
+press y
+
+ignore in between warnings
+
+epochs we have seen in deeplearning.
+
+After this training, we can chat with our chatbot.
+
+Do you want tospeak tothe trained assistant--- yes---
+
+your input -> hi
+
+Hey! How are you?
+
+your input -> bye
+
+bye
+
+your input ->/stop-----------------brings out of chatbot
+
+(myenv) D:\chatrasa>
+
+----------------------------------------------
+Now creating rasa chatbot---- 
+
+first understsnding rasa--rasa is an open source ml framework used for creaing conversaional chatbots.
+
+it is used to automate the chat and voicebased assitance and also provide support.
+
+it also supprts the web application formats.
+
+now,-----------------------------2.intent.webm-------------------
+
+(myenv) D:\chatrasa>
+
+now,we are going to understand relationship between inputs and outputs.. with which i/p... rasa is behaving or giving what o/p..
+
+Now,open sublime text---- file---> open folder--->navigate to chatrasa
+
+Now,the very first component to understand here is- NLP--natural lang understanding and second component to understand is Natural lang generation
+
+i.e. we need toexplain to our system, what user is asking , so that it understands the context and second component is the response that is generated.
+
+in sublime test-----------------------inside foldr data-----open nlu.yml----- just scroll and see it....
+
+now,intent is something, which can help in understanding the intention.. and the listof  different ways of greeting someone are given.
+
+now, if i write any stmt which falls under this category..then my system will understand that my intent is of greeting..
+
+Now,lets say imkeeping greet,goodbye and affirm.... and rest all im deleting....
+
+Im changing affirm tocreate my own intent...lets say.. instead of affirm ,i want introduction--
+
+- intent: introduction
+  examples: |
+    - tell me something about yourself
+    - who are you
+    - are you a robot
+    - introduce
+    - introduce yourself
+    - what is your name
+
+Save nlu.yml
+
+Now,when we are writing these intent,  we are not expecting that user will write exacly these sentences..but wht user will write will be very much closely 
+related to these sentences..
+
+3.domain-stories.webm-----------
+
+
+Now, we are coming to a part, where our system is giving response---
+
+
+goto domain.yml---and register our intent here first....delete the intents tht we donot have.... and finally we have--
+
+intents:
+  - greet
+  - goodbye
+  - introduction
+
+keep speelings same---
+
+Now,im changing the responses---in domain.yml  ----like---
+
+So,in response to ypur greet... the computer will ask you..."Hey! How can I help you?"
+
+Now, deleting other responses , since we donot have related intents..
+
+Now,if someone says introduce yourself.... then it will wite--
+
+ utter_iamabot:
+  - text: "I am a highly intelligent bot."----- so final domain.yml file is like---
+
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - introduction
+
+responses:
+  utter_greet:
+  - text: "Hey! How can I help you?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a highly intelligent bot."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+Now,next thing is mapping of these intents and response-- i.e. defining relationship between introduction and utter_imabot
+
+So, first save this file--
+
+and open stories.yml--------------this file will helpus to establish the relationship between intent and response---
+
+delete sad path 1 and sad path 2-- and make changes to 1st story--
+
+stories:
+
+- story: introduction path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: introduction
+  - action: utter_iamabot
+  - intent: goodbye
+  - action: utter_goodbye
+
+Later come to rules.yml
+
+Now,we arenot at all concerned about rules... so delete the contents of rules.yml-- or you can comment even---
+
+4.retraning.webm-----------------------------------
+
+Now, since we have made changes, we need to retrain our model--- so----
+
+goto command prompt----
+
+(myenv) D:\chatrasa>rasa train
+
+(myenv) D:\chatrasa>rasa shell
+
+Your input ->  hi
+Hey! How can I help you?
+Your input ->  name please
+I am a highly intelligent bot.
+
+now, this is what we are talking--in nlu.yml we have not given name please.... but we have something like what is your name? so by this name word...
+
+it understood.... and gave reply.
+
+Your input ->  /stop
+
+5.action.webm----------------------------------------------
+
+Tillnow we haveseen how to define static content..what if i want tocreatea dynamic one...
+
+for eg.time will change every moment...so if my user is asking for a time.. then we will have togive current time..
+
+So now inside nlu.yml-------- im creating an intent--- 
+
+- intent: current_time
+  examples: |
+    - tell me whats the current time
+    - what is the current time
+    - time
+    - time please
+
+now,register this intent in domain.yml file--- add current_time in intents---
+
+intents:
+  - greet
+  - goodbye
+  - introduction
+  - current_time
+
+now we dont want to generate an utter response ------------- goto actions.py file-----
+
+uncomment all the stuff--- and do following---
+
+ActioHelloWorld is a class which is to print Hello World
+
+this is the original code and we are going to apply changes on this like--
+
+def name(self) -> Text:
+         return "action_current_time"----------------action_current_time is the name of the action
+
+from typing import Any, Text, Dict, List
+
+from rasa_sdk import Action, Tracker
+from rasa_sdk.executor import CollectingDispatcher
+from datetime import datetime as dt
+
+class ActionCurrentTime(Action):
+
+     def name(self) -> Text:
+         return "action_current_time"
+
+     def run(self, dispatcher: CollectingDispatcher,
+             tracker: Tracker,
+             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+         time=str(dt.now().time())
+
+         dispatcher.utter_message(text="Time : {}".format(time))
+
+         return []
+
+
+
+6.action server.webm
+
+
+now goto domain.yml
+
+
+intents:
+  - greet
+  - goodbye
+  - introduction
+  - current_time
+
+actions:
+  - action_current_time
+
+
+Now, we have created actions and intents... now we need to create story---stories.yml---
+
+
+Now, open endpoints.yml file---------------------------------------------------------- 
+
+and uncomment action_endpoint
+
+now goto cmd point and retrain----
+
+(myenv) D:\chatrasa>rasa train
+
+Now,in the mean time--- what we will do is-- we will open 1 more ananconda prompt---just in windows search bar.. search anaconda prompt
+
+(base) C:\Users\itvedant>activate myenv
+
+(myenv) C:\Users\itvedant>d:
+
+(myenv) D:\>cd chatrasa
+
+(myenv) D:\chatrasa>rasa run actions
+
+Now,remember rasa run actions is opened on a different terminal... and in 1 terminal we have done training.
+
+(myenv) D:\chatrasa>rasa shell
+
+###----------------------make sure your action server is started.....
+
+Your input ->  hi
+Hey! How can I help you?
+Your input ->  time
+Time : 14:05:51.285845
+Your input ->  name please
+Time : 14:06:14.736847----------------------------this o/p is wrong. So whatever new instruction is addedtomy chatbot--is given to the intent to increase the quality
+Your input ->  your name
+I am a highly intelligent bot.
+Your input ->  bye
+Bye
+Your input ->  /stop
+
+==================================
+
+nlu.yml------
+
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: introduction
+  examples: |
+    - tell me something about yourself
+    - who are you
+    - are you a robot
+    - introduce
+    - introduce yourself
+    - what is your name
+
+
+- intent: current_time
+  examples: |
+    - tell me whats the current time
+    - what is the current time
+    - time
+    - time please
+  
+
+
+--------------------
+
+domain.yml
+
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - introduction
+  - current_time
+
+actions:
+  - action_current_time
+
+responses:
+  utter_greet:
+  - text: "Hey! How can I help you?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a highly intelligent bot."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
+actions.yml
+
+
+from typing import Any, Text, Dict, List
+
+from rasa_sdk import Action, Tracker
+from rasa_sdk.executor import CollectingDispatcher
+from datetime import datetime as dt
+
+class ActionCurrentTime(Action):
+
+    def name(self) -> Text:
+        return "action_current_time"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        time=str(dt.now().time())
+
+        dispatcher.utter_message(text="Time : {}".format(time))
+
+        return []
+
+--------------------
+
+stories.yml
+
+version: "3.1"
+
+stories:
+
+- story: introduction path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: introduction
+  - action: utter_iamabot
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: current time path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: current_time
+  - action: action_current_time
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+-------------------------
+
+endpoints.yml
+
+
+action_endpoint:
+  url: "http://localhost:5055/webhook"
+
+------------------------------------
+
+rules.yml-----------------------------nill-----------------------
+
+
+#-----------------------------------actions--------------------------------------
+
+
+nlu.yml---------------------------------------- creating a new intent-----------------------
+
+creation of entity in sq bracket and entities type in simple brackets.
+
+- intent: study_material
+  examples: |
+    - help me prepare for [python](subject) [interview](material_type)
+    - find me some interview questions inpython
+    - send me tutorial video links for python
+    - get me some python tutorial links
+
+
+now, whereever there is interview replace it with [interview](material_type)--- and python with [python](subject)
+
+- intent: study_material
+  examples: |
+    - help me prepare for [python](subject) [interview](material_type)
+    - find me some [interview](material_type) questions in [python](subject)
+    - send me [interview](material_type) video links for [python](subject)
+    - get me some [python](subject) [interview](material_type) links
+
+
+    - help me prepare for [java](subject) [interview](material_type)
+    - find me some [interview](material_type) questions in [java](subject)
+    - send me [interview](material_type) video links for [java](subject)
+    - get me some [java](subject) [interview](material_type) links
+
+now, this is for python subject,in the same way we can create for java----
+
+--------------------now going to domain.yml---- 
+
+add to intents--
+ study_material
+
+and add entities that we have used---
+
+entities:
+  - subject
+  - material_type
+
+-------------------------now go  to actions.py file-----
+
+just copy paste the class and make few changes---
+
+we arenot going to use time element. So delete it.
+
+we are using this variable argument tracker--
+
+tracker.latest_message['entities']-------------- now this stmt will allow this prog to fetch entities inside the user input.
+
+and we will store those entities inside entities variable.
+
+entities = tracker.latest_message['entities'] 
+
+print(entities) # as this is in action file .. it will be opened in second cmd line i.e. action server cmd line.
+
+also, in dispatcher the chatbot will respond back by saying
+
+finally--
+class ActionStudyMaterial(Action):
+
+    def name(self) -> Text:
+        return "action_study_material"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        entities = tracker.latest_message['entities']
+        print(entities)
+
+        dispatcher.utter_message(text="Check Actions Cmd")
+
+        return []
+
+------now we need to register this in domain.yml file under actions----
+
+action_study_material----under actions
+
+----------------now going to stories.yml and creating one more story line----
+
+just copy paste the above storyline---
+
+- story: study material path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: study_material
+  - action: action_study_material
+  - intent: goodbye
+  - action: utter_goodbye
+
+-------------------goto cmd prompt-------
+
+    
+(base) C:\Users\itvedant>activate myenv
+
+(myenv) C:\Users\itvedant>d:
+
+(myenv) D:\>cd chatrasa
+
+(myenv) D:\chatrasa>rasa train
+
+Now,open 1 more cmd prompt----
+
+
+(base) C:\Users\itvedant>conda activate myenv
+
+(myenv) C:\Users\itvedant>d:
+
+(myenv) D:\>cd chatrasa
+
+(myenv) D:\chatrasa>rasa run actions
+
+Now, we can see action_study_material is registered
+
+Now,-------------- open training server.....
+
+(myenv) D:\chatrasa>rasa shell
+
+
+Your input ->  get me some python interview questions
+Check Actions Cmd
+
+-----------in the action server,
+[{'entity': 'subject', 'start': 0, 'end': 6, 'confidence_entity': 0.9992049336433411, 'value': 'python', 'extractor': 'DIETClassifier'}, {'entity': 'material_type', 'start': 7, 'end': 16, 'confidence_entity': 0.9996392726898193, 'value': 'interview', 'extractor': 'DIETClassifier'}]
+
+wehave received the entities and material types,i.e. we have caught an entity of type subject whose value is python.
+
+another entity caught is material type, and value of entity is interview type.
+
+Your input ->  /stop
+
+------------------------------------------------------------------------------------------
+But this is not our intent.. instead of displaying this check actions cmd as o/p--- we will give the actual resources from the internet.
+
+-------------------------------ai3.webm------
+
+now we will initialize 1 for loop, which will evaluate if the entity is subject, value is python,checking material type and value is interview questions,..
+so we will be sending materials, if the value is video or link then i will share accordingly...
+
+come again to--------actions.yml-----
+
+class ActionStudyMaterial-----
+
+
+there is an entity key in cmd actions o/p-- we will use that-----
+
+
+
+class ActionStudyMaterial(Action):
+
+    def name(self) -> Text:
+        return "action_study_material"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        entities = tracker.latest_message['entities']
+        for entity in entities:
+            if entity["entity"]=="subject":
+                subject = entity["value"]
+            if entity["entity"]=="material_type":
+                material_type = entity["value"]
+
+        if subject == "java":
+            if "material_type" == "interview":
+                # do something
+            if "material_type" == "tutorial":
+                # do something
+
+        if subject == "python":
+            if "material_type" == "interview":
+                # do something
+                # now to display msg we use dispatcher...so instead of do something we will put dispatcher
+
+            if "material_type" == "tutorial":
+                # do something
+                # now to display msg we use dispatcher...so instead of do something we will put dispatcher
+
+        
+
+
+
+        dispatcher.utter_message(text="Check Actions Cmd")
+
+        return []
+
+
+
+------------ now we will apply changes in above code----
+
+and then go to browser , browse java interview questions... and open any link ... copy the link and paste in text=
+
+lly, for videos, come back from that link .. go to video part and just right click on any video and copy link address and paste next to text=
+
+https://www.edureka.co/blog/interview-questions/java-interview-questions/
+
+
+so, till now , following changes we have done----
+
+class ActionStudyMaterial(Action):
+
+    def name(self) -> Text:
+        return "action_study_material"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        entities = tracker.latest_message['entities']
+        for entity in entities:
+            if entity["entity"]=="subject":
+                subject = entity["value"]
+            if entity["entity"]=="material_type":
+                material_type = entity["value"]
+
+        if subject == "java":
+            if material_type=="interview":
+                # do something
+                dispatcher.utter_message(text="https://www.interviewbit.com/java-interview-questions/")
+            if material_type=="tutorial":
+                # do something
+                dispatcher.utter_message(text="https://www.edureka.co/blog/interview-questions/java-interview-questions/")
+
+        if subject == "python":
+            if material_type=="interview":
+                # do something
+                # now to display msg we use dispatcher...so instead of do something we will put dispatcher
+                dispatcher.utter_message(text="https://intellipaat.com/blog/interview-question/python-interview-questions/")
+
+            if material_type=="tutorial":
+                # do something
+                # now to display msg we use dispatcher...so instead of do something we will put dispatcher
+                dispatcher.utter_message(text="https://intellipaat.com/blog/interview-question/python-interview-questions/")
+
+        
+
+
+
+        
+        return []
+-------------stop action server------cross both the prompts----- and reinitialize again---
+
+
+
+(myenv) C:\Users\parin\Documents\chatrasa>activate myenv
+
+(myenv) C:\Users\parin\Documents\chatrasa>conda.bat activate myenv
+
+(myenv) C:\Users\parin\Documents\chatrasa>cd C:\Users\parin\Documents\chatrasa
+
+(myenv) C:\Users\parin\Documents\chatrasa>rasa train
+
+
+------------mean while, in anaconda prompt------
+
+(base) C:\Users\parin>conda.bat activate myenv
+
+(myenv) C:\Users\parin>conda activate myenv
+
+(myenv) C:\Users\parin>cd C:\Users\parin\Documents\chatrasa
+
+(myenv) C:\Users\parin\Documents\chatrasa>rasa run actions
+
+
+------------------now going to training server--- training is complete------
+
+(myenv) C:\Users\parin\Documents\chatrasa>rasa shell
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
